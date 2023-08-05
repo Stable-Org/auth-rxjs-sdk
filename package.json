@@ -1,0 +1,22 @@
+{
+  "name": "@stable-org/auth-rxjs-sdk",
+  "version": "0.0.3",
+  "description": "OpenAPI client for @stable-org/auth-rxjs-sdk",
+  "author": "OpenAPI-Generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stable-Org/auth-rxjs-sdk.git"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts" : {
+    "build": "node_modules/.bin/tsc --outDir dist/",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "rxjs": "^7.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0"
+  }
+}

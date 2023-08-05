@@ -1,0 +1,12 @@
+.gitignore
+.openapi-generator-ignore
+README.md
+apis/AuthApi.ts
+apis/index.ts
+index.ts
+models/LoginUserRequestDto.ts
+models/index.ts
+package.json
+runtime.ts
+servers.ts
+tsconfig.json
