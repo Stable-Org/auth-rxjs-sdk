@@ -13,25 +13,25 @@
 
 /**
  * @export
- * @interface LoginUserRequestDto
+ * @interface LoginUserResponseDto
  */
-export interface LoginUserRequestDto {
+export interface LoginUserResponseDto {
     /**
-     * The email of the user
+     * The ID token for the user
      * @type {string}
-     * @memberof LoginUserRequestDto
+     * @memberof LoginUserResponseDto
      */
-    email: string;
+    idToken: string;
     /**
-     * The password of the user (minimum 8 characters)
+     * The access token for the user
      * @type {string}
-     * @memberof LoginUserRequestDto
+     * @memberof LoginUserResponseDto
      */
-    password: string;
+    accessToken: string;
     /**
-     * The new password to set for the user (optional, minimum 8 characters)
+     * The refresh token for the user
      * @type {string}
-     * @memberof LoginUserRequestDto
+     * @memberof LoginUserResponseDto
      */
-    newPassword?: string;
+    refreshToken: string;
 }
