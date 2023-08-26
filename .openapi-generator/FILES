@@ -6,7 +6,9 @@ apis/index.ts
 index.ts
 models/AcceptedResponseDto.ts
 models/BadRequestResponseDto.ts
+models/ConfirmForgotPasswordRequestDto.ts
 models/ConfirmRequestDto.ts
+models/ForgotPasswordRequestDto.ts
 models/LoginRequestDto.ts
 models/LoginResponseDto.ts
 models/RefreshTokenRequestDto.ts
