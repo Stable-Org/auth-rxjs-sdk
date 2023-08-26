@@ -13,25 +13,25 @@
 
 /**
  * @export
- * @interface UnauthorizedResponseDto
+ * @interface LoginResponseDto
  */
-export interface UnauthorizedResponseDto {
+export interface LoginResponseDto {
     /**
-     * HTTP status code of the error
-     * @type {number}
-     * @memberof UnauthorizedResponseDto
-     */
-    statusCode: number;
-    /**
-     * Short description of the error
+     * The ID token for the user
      * @type {string}
-     * @memberof UnauthorizedResponseDto
+     * @memberof LoginResponseDto
      */
-    message: string;
+    idToken: string;
     /**
-     * Error type
+     * The access token for the user
      * @type {string}
-     * @memberof UnauthorizedResponseDto
+     * @memberof LoginResponseDto
      */
-    error: string;
+    accessToken: string;
+    /**
+     * The refresh token for the user
+     * @type {string}
+     * @memberof LoginResponseDto
+     */
+    refreshToken: string;
 }

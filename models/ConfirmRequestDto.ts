@@ -13,25 +13,19 @@
 
 /**
  * @export
- * @interface UnauthorizedResponseDto
+ * @interface ConfirmRequestDto
  */
-export interface UnauthorizedResponseDto {
+export interface ConfirmRequestDto {
     /**
-     * HTTP status code of the error
-     * @type {number}
-     * @memberof UnauthorizedResponseDto
-     */
-    statusCode: number;
-    /**
-     * Short description of the error
+     * The email of the user
      * @type {string}
-     * @memberof UnauthorizedResponseDto
+     * @memberof ConfirmRequestDto
      */
-    message: string;
+    email: string;
     /**
-     * Error type
+     * The confirmation code sent to the user\'s email
      * @type {string}
-     * @memberof UnauthorizedResponseDto
+     * @memberof ConfirmRequestDto
      */
-    error: string;
+    code: string;
 }
